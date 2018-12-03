@@ -1,4 +1,4 @@
-#Bitcoin Ticker
+# Bitcoin Ticker
 
 This app uses XHR, Fetch, jQuery and Axios methods to get the current price of Bitcoin from the Coinbase API.
 
