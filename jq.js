@@ -15,8 +15,8 @@ setInterval(() => {
         priceDisplay.innerHTML = '&euro;'+Price[0] + '.' + Price[1][0] + Price[1][1];
        
     })
-    .fail(() => {
-        console.log("There was a error");
+    .fail((error) => {
+        console.log(error);
     })       
 }, 2000)
 
