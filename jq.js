@@ -3,12 +3,13 @@ let priceDisplay = document.querySelector('#price');
 setInterval(() => {
     $.ajax({
         method: 'GET',
-        url: 'https://api.coindesk.com/v1/bpi/currentprice.json'
+        url: 'https://api.coindesk.com/v1/bpi/currentprice.json',
+        dataType: 'json'
     })
     .done((res) => {
         
         // console.log(res);
-        let Price = JSON.parse(res).bpi.EUR.rate;
+        let Price = res.bpi.EUR.rate;
         console.log(Price);
         Price = Price.split('.');
         
